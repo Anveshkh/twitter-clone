@@ -1,0 +1,26 @@
+.feed{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;
+
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed{
+    /*For IE and EDge*/
+    -ms-overflow-style: none;
+    /*Firefox*/
+    scrollbar-width: none;
+}
+
+.feed__header{
+    position: sticky;
+    top: 0;
+    z-index: 100;/*Z index basically says no matter what show this on top if value of z index is greatest for a particular element*/
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+/* background-color: var(--twitter-background); */
+}
